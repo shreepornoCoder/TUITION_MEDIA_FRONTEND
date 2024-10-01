@@ -1,0 +1,5 @@
+.change_pass-btn:active{
+    background-color: #3492f0 !important;
+    transform: scale(0.997);
+    animation-delay: 10ms;
+}

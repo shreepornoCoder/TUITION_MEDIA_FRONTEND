@@ -1,0 +1,14 @@
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-table thead {
+    border-radius: 10px 10px 0 0;
+    background-color: #abc4ff; /* Light blue background for the header */
+}

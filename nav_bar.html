@@ -1,0 +1,27 @@
+<style>
+    .link {
+        cursor: pointer;
+    }
+
+    .link:hover {
+        pointer-events: auto;
+        text-decoration: underline; /* Example of a hover effect */
+    }
+</style>
+
+<!-- nav bar -->
+<nav class="d-flex justify-content-around align-items-center p-5">
+    <div class="logo-container d-flex align-items-center gap-1">
+        <img src="./Images/icon.png" class="icon-img" alt="" />
+        <h3 class="text-white fw-bold">TuitionMedia</h3>
+    </div>
+    <div class="menu-container d-flex " id = "nav-element">
+        <li class="menu"><a href="home.html" class="text-white link">Home</a></li>
+        <li class="menu"><a href="tuition_jobs.html" class="text-white link">Tuition Jobs</a></li>
+        
+        <!-- <li class="menu">Services</li> -->
+        <!-- <li class="menu">Contact us</li> -->
+    </div>
+</nav>
+
+<script src="./auth.js"></script>

@@ -1,0 +1,134 @@
+nav{
+    height: 100px;
+    /* background: linear-gradient(to right, #51a8c0, #64AFB2, #77C3BF); */
+    background-color: #43437C;
+}
+.icon-img{
+    width: 55px;
+}
+.menu-container{
+    list-style: none;
+}
+.menu{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    text-transform: uppercase;
+}
+.banner-container{
+    width: 1100px;
+    height: 400px;
+    background-color: #82CFC7;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.stu-img{
+    width: 500px;
+    margin-right: -120px;
+    margin-top: -120px;
+    height: 500px;
+}
+.banner-text{
+    padding: 20px;
+}
+.banner-des{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: justify;
+    color: #1C6180;
+}
+.link{
+    text-decoration: none;
+}
+.job-btn{
+    position: relative;
+    left: 340px;
+    top: -80px;
+    border: none;
+    padding: 13px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* main */
+.ask-img{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+.why-we{
+    width: 600px;
+}
+
+/* add new tuition */
+.add-tuition-container{
+    border: solid 1px gray;
+    padding: 55px;
+    border-radius: 10px;
+}
+
+.keyword-img{
+    width: 80px;
+    margin: auto;
+    display: block;
+}
+
+.keyword-text{
+    text-align: justify;
+    color: #1a876f;
+    font-weight: 500;
+    /* font-weight: bold; */
+}
+
+.keyword{
+    width: 380px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #93fadd;
+}
+
+.keyword-heading{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.keyword-container{
+    padding-bottom: 50px;
+}
+
+/* footer */
+footer{
+    height: 55vh;
+    background-color: #a6b4d0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-img{
+    width: 60px;
+}
+.f-text{
+    color: #43437C;
+}
+.f-line{
+    width: 1400px;
+    margin: auto;
+}
+.social-meadia{
+    gap: 20px;
+}
+.social-icon{
+    width: 50px;
+}

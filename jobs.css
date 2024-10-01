@@ -1,0 +1,36 @@
+/* main{
+    height: 150vh;
+} */
+.subject{
+    border: none;
+    pointer-events: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: #68b6ef;
+}
+.container{
+    justify-content: center;
+}
+.filter{
+    height: 700px;
+    border-radius: 10px;
+    /* border: solid 1px black; */
+    padding: 15px;
+    background-color: #52b2cf ;
+}
+.filter-btn{
+    margin: 0;
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.hrll{
+    background-color: #80fb8f;
+    border-radius: 5px;
+}

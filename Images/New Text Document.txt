@@ -1,0 +1,5 @@
+imgbb তে store করবেন api call করে,  সেইখানে থেকে একটি response আসবে যেইটাতে img এর live link থাকবে, আর সেই img url টি onrender এর মধ্যে charfield আকারে রাখবেন। এখন যখনি আপনার img show করাতে হবে,  শুধু onrender থেকে সেইটি charfield text টাতে  যেই imgrurl store করলেন সেইটিত দিয়ে img show করাতে পারবেন।
+imgbb তে কিভাবে api diye img upload korben seytar jonno, নিচের  ভিডিওটি দেখে ফেলুন, 
+https://www.youtube.com/watch?v=TDwj6HtsURI&t=636s
+
+8e79hb7X2miyj1Bo // password

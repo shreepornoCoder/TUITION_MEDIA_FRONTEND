@@ -1,0 +1,36 @@
+/* main{
+    height: 130vh;
+} */
+
+.details-container{
+    width: 950px;
+    /* height: 880px; */
+    border: solid 2px #70d6ff ;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.details{
+    padding: 15px;
+}
+
+.admin-btn{
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.review-form-container{
+    width: 500px;
+    height: auto;
+    /* border: 1px black solid; */
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #dcf8fe;
+}
+
+.form-label{
+    color: #809bce;
+    font-weight: bold;
+}
