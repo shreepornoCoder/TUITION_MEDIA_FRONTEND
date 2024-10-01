@@ -185,6 +185,8 @@ const displayReview = (review) =>{
 
 const postReview = (event) =>{
     event.preventDefault()
+    console.log(localStorage.getItem("token"))
+    alert("aller")
 
     if (localStorage.getItem("token") != null)
     {
