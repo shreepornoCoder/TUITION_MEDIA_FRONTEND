@@ -86,7 +86,7 @@ const updateTuition_isApplied = (tuition_id) => {
         is_applied: true
     };
 
-    fetch(`http://127.0.0.1:8000/tuitions/tuiton/${tuition_id}/`, { 
+    fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/tuiton/${tuition_id}/`, { 
         method: "PATCH",
         headers: {
             "Content-Type": "application/json",
@@ -115,7 +115,7 @@ const applyTuition = (is_applied) =>{
             user:user
         }
         const token = localStorage.getItem('token')
-        fetch('http://127.0.0.1:8000/tuition_history/list/', {
+        fetch('https://final-exam-tuition-media-64an.vercel.app/tuition_history/list/', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -139,7 +139,7 @@ const applyTuition = (is_applied) =>{
 const loadAllReview = () =>{
     const tuition_id = new URLSearchParams(window.location.search).get("tuition_id");
 
-    fetch(`http://127.0.0.1:8000/tuitions/review/?tuition_id=${tuition_id}`)
+    fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/?tuition_id=${tuition_id}`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data)
@@ -152,7 +152,7 @@ const displayReview = (review) =>{
     const parent = document.getElementById("review-container")
 
     review.forEach(element => {
-        fetch(`http://127.0.0.1:8000/users/register_user_list/${element.reviewer}/`) // fetching user's data
+        fetch(`https://final-exam-tuition-media-64an.vercel.app/users/register_user_list/${element.reviewer}/`) // fetching user's data
         .then((res) => res.json())
         .then((data) =>{
             console.log(data)
@@ -202,7 +202,7 @@ const postReview = (event) =>{
     console.log(postData)
 
     const token = localStorage.getItem('token')
-    fetch(`http://127.0.0.1:8000/tuitions/review/`, {
+    fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/`, {
         method : "POST",
         headers : {
             "Content-Type": "application/json",

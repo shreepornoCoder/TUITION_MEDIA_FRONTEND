@@ -374,3 +374,4 @@ const Delete_Tuition = (tuition_id) =>{
     })
 
 }
+
