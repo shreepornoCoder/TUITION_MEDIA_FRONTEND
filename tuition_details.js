@@ -186,32 +186,38 @@ const displayReview = (review) =>{
 const postReview = (event) =>{
     event.preventDefault()
 
-    const tuition_id = new URLSearchParams(window.location.search).get("tuition_id");
-    const user_id = localStorage.getItem("user_id")
+    if (localStorage.getItem("token") != null)
+    {
+        const tuition_id = new URLSearchParams(window.location.search).get("tuition_id");
+        const user_id = localStorage.getItem("user_id")
 
-    const form = document.getElementById("review-form")
-    const formData = new FormData(form)
+        const form = document.getElementById("review-form")
+        const formData = new FormData(form)
 
-    const postData = {
-        reviewer: user_id,
-        tuition: tuition_id,
-        review: formData.get("review"),
-        rating: formData.get("rating")
+        const postData = {
+            reviewer: user_id,
+            tuition: tuition_id,
+            review: formData.get("review"),
+            rating: formData.get("rating")
+        }
+
+        console.log(postData)
+
+        const token = localStorage.getItem('token')
+        fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/`, {
+            method : "POST",
+            headers : {
+                "Content-Type": "application/json",
+                Authorization: `Token ${token}`,
+            },
+            body: JSON.stringify(postData)
+        }).then((res) => res.json())
+        .then((data)=>{
+            window.location.reload()
+            alert("review Added Successfully!")
+        })
     }
-
-    console.log(postData)
-
-    const token = localStorage.getItem('token')
-    fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/`, {
-        method : "POST",
-        headers : {
-            "Content-Type": "application/json",
-            Authorization: `Token ${token}`,
-        },
-        body: JSON.stringify(postData)
-    }).then((res) => res.json())
-    .then((data)=>{
-        window.location.reload()
-        alert("review Added Successfully!")
-    })
+    else{
+        alert("You Are not Logged In!")
+    }
 }
