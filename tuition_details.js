@@ -199,8 +199,8 @@ const postReview = (event) =>{
         const postData = {
             reviewer: user_id,
             tuition: tuition_id,
-            review: formData.get("review"),
-            rating: formData.get("rating")
+            review: document.getElementById("review").value,
+            rating: document.getElementById("ratings").value
         }
 
         console.log(postData)
