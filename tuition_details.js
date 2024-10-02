@@ -184,9 +184,9 @@ const displayReview = (review) =>{
 }
 
 const postReview = (event) =>{
+    console.log("grehah")
     event.preventDefault()
     console.log(localStorage.getItem("token"))
-    alert("aller")
 
     if (localStorage.getItem("token") != null)
     {
@@ -206,18 +206,31 @@ const postReview = (event) =>{
         console.log(postData)
 
         const token = localStorage.getItem('token')
-        fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/`, {
-            method : "POST",
-            headers : {
-                "Content-Type": "application/json",
-                Authorization: `Token ${token}`,
-            },
-            body: JSON.stringify(postData)
-        }).then((res) => res.json())
-        .then((data)=>{
-            window.location.reload()
-            alert("review Added Successfully!")
-        })
+        console.log(token)
+
+        if (token)
+        {
+            if (localStorage.getItem('role') != "admin")
+            {
+                fetch(`https://final-exam-tuition-media-64an.vercel.app/tuitions/review/`, {
+                    method : "POST",
+                    headers : {
+                        "Content-Type": "application/json",
+                        Authorization: `Token ${token}`,
+                    },
+                    body: JSON.stringify(postData)
+                }).then((res) => res.json())
+                .then((data)=>{
+                    alert("review Added Successfully!")
+                })
+            }
+            else{
+                alert("Admin Cannot Post Review!")
+            }
+        }
+        else{
+            alert("You are not Logged In As Teacher!")
+        }
     }
     else{
         alert("You Are not Logged In!")

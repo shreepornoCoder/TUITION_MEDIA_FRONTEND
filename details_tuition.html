@@ -41,7 +41,7 @@
 
         <!-- review form -->
         <div class="review-form-container m-auto w-50 mb-4">
-            <form method="post" onsubmit="postReview(event)" id="review-form"></form>
+            <form method="post" id="review-form"></form>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Review</label>
                     <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="4" placeholder="Write Your Review About The Tuition" required></textarea>
@@ -57,7 +57,7 @@
                     </select>
 
                 </div>
-                <button class="btn btn-info text-light fw-bold" type="submit">Submit</button>
+                <button class="btn btn-info text-light fw-bold" type="submit" onclick="postReview(event)">Submit</button>
             </form>
         </div>
 
